@@ -195,5 +195,17 @@
         android:textStyle="bold"
         android:inputType="textPersonName" />
 
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp"
+        android:gravity="bottom"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:text="Fighting!!!" />
+
 
 </RelativeLayout>
