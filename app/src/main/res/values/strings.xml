@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="desc">Button</string>
+    <string name="errorMsg">You need to check option</string>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/skyblue"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/desc"
+        android:onClick="convert_m"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:text="Convert" />
+
+    <EditText
+        android:id="@+id/numInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@android:string/emptyPhoneNumber"
+        android:ems="10"
+        android:hint="Enter value (5)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center" />
+
+
+    <CheckBox
+        android:id="@+id/kg2pound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:contentDescription="kg2pound"
+        android:text="kg to pound"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/far2cel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="125dp"
+        android:contentDescription="fartocel"
+        android:text="farenhit to celcius"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/foot2cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="170dp"
+        android:text="foot to cm"
+        android:contentDescription="foot2cm"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/dollar2tk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="215dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="dollartaka"
+        android:text="US$ to BDT"
+        android:textColor="#080808"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/deg2rad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="deg2red"
+        android:text="degree to radian"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        />
+
+    <CheckBox
+        android:id="@+id/atm2hg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="305dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="atm2bars"
+        android:text="atm to mmHg"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/kg2pound"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="result"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/resultFar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/kg2pound"
+        android:contentDescription="resultFar"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/resultFoot"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/resultFar"
+        android:contentDescription="resultfoot"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/resultDollar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/resultFoot"
+        android:contentDescription="resultDollar"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/resultRad"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/dollar2tk"
+        android:contentDescription="resultRad"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:inputType="textPersonName"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/resultatm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/deg2rad"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#080808"
+        android:textStyle="bold"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>
